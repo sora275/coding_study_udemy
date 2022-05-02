@@ -9,16 +9,16 @@ a {
 }
 
 #main_header {
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(29, 26, 24);
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 #logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(238, 164, 80);
     text-transform: uppercase;
@@ -32,12 +32,12 @@ a {
 }
 
 #main_header ul li {
-    margin: 0 0 0 16px;
+    margin: 0 1rem;
 }
 
 #main_header nav a {
     color: rgb(185, 131, 31);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #main_header nav a:hover {
@@ -47,7 +47,7 @@ a {
 main h1 {
     text-align: center;
     color: rgb(238, 164, 80);
-    font-size: 38px;
+    font-size: 3rem;
 }
 
 
@@ -55,16 +55,16 @@ main h1 {
 
 #latest_products {
     width: 80%;
-    margin: 50px auto;
+    margin: 2rem auto;
 }
 
 #latest_products ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    list-style: none;
-    gap: 16px;
+    gap: 1rem;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 
@@ -75,21 +75,22 @@ main h1 {
 }
 
 .food_item img {
-    height: 240px;
+    height: 15rem;
     width: 100%;
     object-fit: cover;
 }
 
 .food_item_content {
     text-align: center;
-    padding: 16px;
+    padding: 1rem;
 }
+
 
 .btn {
     background-color: rgb(228, 157, 44);
     color: white;
     border-radius: 4px;
-    padding: 8px 24px;
+    padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
