@@ -24,6 +24,20 @@ a {
     text-transform: uppercase;
 }
 
+.menu_btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu_btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
 #main_header ul {
     list-style: none;
     display: flex;
@@ -43,6 +57,48 @@ a {
 #main_header nav a:hover {
     color: rgb(228, 163, 44);
 }
+
+#side_drawer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side_drawer:target {
+    display: block;
+}
+
+#side_drawer header {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(29, 26, 24);
+    padding: 0 5%;
+}
+
+#side_drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side_drawer a {
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+}
+
+#side_drawer li {
+    margin: 1rem 0;
+}
+
 
 main h1 {
     text-align: center;
@@ -74,6 +130,10 @@ main h1 {
     overflow: hidden;
 }
 
+.food_item h2 {
+    margin: 0 0 1rem 0;
+}
+
 .food_item img {
     height: 15rem;
     width: 100%;
@@ -83,6 +143,7 @@ main h1 {
 .food_item_content {
     text-align: center;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -95,4 +156,22 @@ main h1 {
 
 .btn:hover {
     background-color: rgb(221, 134, 34);
+}
+
+
+
+@media (max-width:48rem) {
+    #main_header nav {
+        display: none;
+    }
+    main h1 {
+        font-size: 1.5rem;
+    }
+    #latest_products ul {
+        grid-template-columns: 1fr;
+    }
+    .menu_btn {
+        display: flex;
+    }
+    
 }
