@@ -1,19 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Forms</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/06_time/styles.css">
-</head>
-<body>
-    <form action="/" method="GET">
-        <label for="username">Your name</label>
-        <input type="text" name="user_name" id="username">
-        <button>Submit</button>
-    </form>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/06_time/styles.css" />
+  </head>
+    <body>
+        <header>
+        <h1>Demo Form</h1>
+        </header>
+        <main>
+            <form action="/" method="GET">
+                <section>
+                    <h2>Your personal details</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your name</label>
+                        <input type="text" name="user_name" id="username" />
+                    </li>
+                    <li>
+                        <label for="useremail">Your email address</label>
+                        <input type="email" name="user_email" id="useremail" />
+                    </li>
+                    <li>
+                        <label for="userpassword">Your password</label>
+                        <input type="password" name="user_password" id="userpassword" />
+                    </li>
+                </ul>
+                </section>
+
+                <section>
+                    <h2>More details</h2>
+                <ul>
+                    <li>
+                        <label for="usernumber">Your age</label>
+                        <input
+                            type="number"
+                            step="4"
+                            name="user_number"
+                            id="usernumber"
+                        />
+                    </li>
+                    <li>
+                        <label for="userdate">Your Date</label>
+                        <input type="date" name="user_date" id="userdate" />
+                    </li>
+                    <li>
+                        <label for="favoerite_color">Your favorite color?</label>
+                        <select id="favoerite_color" name="color">
+                            <option value="blue">blue</option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                        </select>
+                    </li>
+                </ul>
+                </section>
+
+                <section>
+                    <label for="usermessage">Your message</label>
+                    <textarea name="message" id="usermessage" rows="5"></textarea>
+                </section>
+
+                <section>
+                <h2>How should we verify your account?</h2>
+                <ul>
+                    <li class="form_control_inline">
+                        <input
+                            type="radio"
+                            id="text_message"
+                            name="verify"
+                            value="text_message"
+                        />
+                        <label for="text_message">Via a txt massage (SMS)</label>
+                    </li>
+                    <li class="form_control_inline">
+                        <input type="radio" id="phone_call" name="verify" value="phone" />
+                        <label for="phone_call">Via a phone call</label>
+                    </li>
+                    <li class="form_control_inline">
+                        <input type="radio" id="email" name="verify" value="email" />
+                        <label for="email">Via an email</label>
+                    </li>
+                </section>
+
+                <section>
+                    <h2>Contact details</h2>
+                    <ul>
+                        <li class="form_control_inline">
+                            <input
+                            type="checkbox"
+                            id="contact_email"
+                            name="contact"
+                            value="email"
+                            />
+                            <label for="contact_email">Contact me via email</label>
+                        </li>
+                        <li class="form_control_inline">
+                            <input
+                            type="checkbox"
+                            id="contact_phone"
+                            name="contact"
+                            value="phone"
+                            />
+                            <label for="contact_phone">Contact me via phone</label>
+                        </li>
+                    </ul>
+                </ul>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="form_control_inline">
+                        <input type="checkbox" id="agree_terms" name="terms" />
+                        <label for="agree_terms">Agree to terms?</label>
+                    </div>
+                </section>
+
+                <section>
+                    <button>Submit</button>
+                </section>
+            </form>
+        </main>
+    </body>
 </html>
