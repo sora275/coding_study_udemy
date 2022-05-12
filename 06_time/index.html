@@ -23,15 +23,15 @@
                 <ul>
                     <li>
                         <label for="username">Your name</label>
-                        <input type="text" name="user_name" id="username" />
+                        <input type="text" name="user_name" id="username" required placeholder="NAME"/>
                     </li>
                     <li>
                         <label for="useremail">Your email address</label>
-                        <input type="email" name="user_email" id="useremail" />
+                        <input type="email" name="user_email" id="useremail" required/>
                     </li>
                     <li>
                         <label for="userpassword">Your password</label>
-                        <input type="password" name="user_password" id="userpassword" />
+                        <input type="password" name="user_password" id="userpassword" required minlength="7" maxlength="10"/>
                     </li>
                 </ul>
                 </section>
@@ -46,11 +46,14 @@
                             step="4"
                             name="user_number"
                             id="usernumber"
+                            required
+                            min="18"
+                            max="100"
                         />
                     </li>
                     <li>
                         <label for="userdate">Your Date</label>
-                        <input type="date" name="user_date" id="userdate" />
+                        <input type="date" name="user_date" id="userdate" required min="1920-01-01" max="2023.12.31" />
                     </li>
                     <li>
                         <label for="favoerite_color">Your favorite color?</label>
@@ -77,15 +80,16 @@
                             id="text_message"
                             name="verify"
                             value="text_message"
+                            required
                         />
                         <label for="text_message">Via a txt massage (SMS)</label>
                     </li>
                     <li class="form_control_inline">
-                        <input type="radio" id="phone_call" name="verify" value="phone" />
+                        <input type="radio" id="phone_call" name="verify" value="phone" required />
                         <label for="phone_call">Via a phone call</label>
                     </li>
                     <li class="form_control_inline">
-                        <input type="radio" id="email" name="verify" value="email" />
+                        <input type="radio" id="email" name="verify" value="email" required />
                         <label for="email">Via an email</label>
                     </li>
                 </section>
@@ -125,7 +129,7 @@
                 </section>
 
                 <section>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </section>
             </form>
         </main>

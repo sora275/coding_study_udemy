@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Challenge</title>
+    <link rel="stylesheet" href="/06_time/Challenge/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="/06_time/Challenge" method="GET">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="user_name" required>
+                    </li>
+                    <li>
+                        <label for="useremail">Your E-Mail Address</label>
+                        <input type="email" id="useremail" name="user_email" required>    
+                    </li>
+                    <li>
+                        <label for="usernumber">Your Phone Number</label>
+                        <input type="tel" id="usernumber" name="user_number" required minlength="5">
+                    </li>
+                    <li>
+                        <label for="usermessage">Your Message</label>
+                        <textarea name="user_message" id="usermessage" rows="6" required minlength="10" maxlength="200"></textarea>
+                    </li>
+                </section>
+                    <section>
+                        <label for="findus">How did you find us?</label>
+                        <select name="find_us" id="findus">
+                            <option value="search">Web Search</option>
+                            <option value="word-of-mouth">Word of Mouth</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </section>
+                </ul>
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="radio_agl">
+                        <input type="radio" id="reply_call" name="reply" value="replycall" required>
+                        <label for="reply_call">Call me</label>
+                    </li>
+                    <li class="radio_agl">
+                        <input type="radio" id="reply_email" name="reply" value="replyemail" required>
+                        <label for="reply_email">Send me an email</label>
+                    </li>
+                    <li class="radio_agl">
+                        <input type="radio" id="reply_none" name="reply" value="replynone" required>
+                        <label for="reply_none">Don't reply</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="radio_agl">
+                    <input type="checkbox" id="accept_terms" name="acceptterms" required>
+                    <label for="accept_terms">Accept Terms</label>
+                </div>
+            </section>
+            <section>
+                <div class="button_agl">
+                    <button type="reset" class="clear_button">Clear</button>
+                    <button type="submit" class="submit_button">Submit</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

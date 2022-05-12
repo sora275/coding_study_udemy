@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(236, 250, 255);
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 40rem;
+    margin:auto;
+    padding: 1rem;
+    background-color: rgb(244, 249, 255);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+label {
+    color: rgb(76, 76, 125);
+    display: block;
+    margin-bottom: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid rgb(162, 173, 192);
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(218, 240, 255);
+}
+
+
+button {
+    font: inherit;
+    border: 1px solid rgb(51, 67, 100);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}    
+
+.button_agl {
+    text-align: right;
+}    
+
+.submit_button {
+    background-color: #2e3953;
+    color: white;
+}    
+
+.clear_button {
+    background-color: transparent;
+    color: rgb(39, 39, 99);
+}    
+
+.submit_button:hover {
+    background-color: #536284;   
+    border-color: #536284;
+}
+
+.clear_button:hover {
+    background-color: rgb(227, 227, 252);
+}
+
+
+
+.radio_agl {
+    display: flex;
+}
+
+.radio_agl input {
+    width: auto;
+}
+
+.radio_agl label {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding: 0;
+}
+
+
+
+

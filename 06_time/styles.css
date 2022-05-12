@@ -29,6 +29,11 @@ label {
     display: block;
 }
 
+textarea {
+    resize: none;
+}
+
+
 input,
 textarea,
 select {
@@ -74,3 +79,4 @@ button:hover {
     width: auto;
     margin-right: 0.5rem;
 }
+
